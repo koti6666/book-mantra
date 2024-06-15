@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animation cardss....!!</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		.cards{
+			width: 80%;
+			display: flex;
+			justify-content: space-evenly;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		.card{
+			border-radius: 15px;
+			width: 40%;
+			margin: 10px;
+			position: relative;
+			overflow: hidden;
+		}
+		.card img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.card .details{
+			height: 0px;
+			overflow: hidden;
+			width: 100%;
+		}
+		.card:hover img{
+			transform: scaleX(120%);
+			transform: scaleY(110%);
+			transition: all 1s;
+		}
+		.card:hover .details{
+			display: block;
+			position: absolute;
+			color: white;
+			bottom: 0px;
+			background-color: rgba(50, 168, 82,0.5);
+			backdrop-filter: blur(5px);
+			height: 70%;
+			transition: all 1s;
+		}
+		.heading{
+			text-align: center;
+			color: white;
+			padding:100%;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="heading">Plan your trip</h1>
+	<div class="cards">
+		<div class="card">
+			<img src="https://www.behindwoods.com/tamil-actress/kajal-aggarwal/kajal-aggarwal-stills-photos-pictures-1877.jpg">
+			<div class="details">
+				<p>Kajal born 19 June 1985 is an Indian actress who works predominantly in Telugu</p>
+			</div>
+		</div>
+		<div class="card">
+			<img src="https://wallpapercave.com/wp/wp4697098.jpg">
+			<div class="details">
+				<p>Kajal A Kitchlu (née Aggarwal;[1] born 19 June 1985[2]) is an Indian actress who works predominantly in Telugu and Tamil language films alongside Hindi language films.[3][4][5] She has worked in more than 50 films and has received two South Indian International Movie Awards.</p>
+			</div>
+		</div>
+		<div class="card">
+			<img src="https://www.behindwoods.com/tamil-actress/kajal-aggarwal/kajal-aggarwal-stills-photos-pictures-1877.jpg">
+			<div class="details">
+				<p>Kajal A Kitchlu (née Aggarwal;born 19 June 1985) is an Indian actress who works predominantly in Telugu and Tamil language films alongside Hindi language films.She has worked in more than 50 films and has received two South Indian International Movie Awards.</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
